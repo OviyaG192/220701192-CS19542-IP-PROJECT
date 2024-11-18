@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        /* Navbar Styles */
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 999;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        /* Content Container */
+        .content-container {
+            margin-top: 60px; /* Offset for fixed navbar */
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .section-title {
+            font-size: 24px;
+            margin-top: 20px;
+            color: #333;
+            text-align: center;
+        }
+        .article {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s;
+        }
+        .article:hover {
+            transform: scale(1.02);
+        }
+        .article h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        .article p {
+            color: #666;
+            margin: 5px 0;
+        }
+        .article .author {
+            font-style: italic;
+            color: #888;
+            font-size: 0.9em;
+        }
+        .article img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        /* Responsive Grid */
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="homee page.html">Home</a>
+        <a href="newspaper.html">Newspaper</a>
+    </div>
+
+    <!-- Content Container -->
+    <div class="content-container">
+        <h2 class="section-title">Latest Articles</h2>
+        <div class="articles-grid">
+            <!-- Latest Article 1 -->
+            <a href="https://acetforafrica.org/atr/?gad_source=1&gclid=Cj0KCQjw99e4BhDiARIsAISE7P8DY65IUZ1XjpnB1zDMMb0lwgbeFhculltRalFazuCbxfgkKufTf1EaAhWBEALw_wcB " target="_blank" class="article">
+                <img src= "global news.jpeg" alt="World News">
+                <h3>Global News Update</h3>
+                <p>Stay updated with the latest global news from BBC.</p>
+                <p class="author">Written by John Doe</p>
+            </a>
+
+            <!-- Latest Article 2 -->
+            <a href="https://en.wikipedia.org/wiki/History_of_sport" target="_blank" class="article">
+                <img src= "sports news.jpeg" alt="Sports News">
+                <h3>Sports Highlights</h3>
+                <p>Catch the latest sports highlights from around the world.</p>
+                <p class="author">Written by Sarah Lee</p>
+            </a>
+
+            <!-- Latest Article 3 -->
+            <a href="https://dig.watch/?gad_source=1&gclid=Cj0KCQjw99e4BhDiARIsAISE7P9iQcfsxeZnQ2SLtJSLFy1lNOgEcuMTZzxytn91hn4EqZ3UK5_yj2waAqSOEALw_wcB" target="_blank" class="article">
+                <img src="tech.jpeg" alt="Tech News">
+                <h3>Tech Innovations</h3>
+                <p>Get the latest insights into emerging technologies.</p>
+                <p class="author">Written by Alice Johnson</p>
+            </a>
+        </div>
+
+        <h2 class="section-title">Oldest Articles</h2>
+        <div class="articles-grid">
+            <!-- Oldest Article 1 -->
+            <a href= "https://history.feedspot.com/ancient_history_blogs/ " target="_blank" class="article">
+                <img src= "civilization.jpeg" alt="History Article">
+                <h3>Ancient Civilizations</h3>
+                <p>Discover the mysteries of ancient civilizations on History.com.</p>
+                <p class="author">Written by Mark Wilson</p>
+            </a>
+
+            <!-- Oldest Article 2 -->
+            <a href="https://www.sciencedirect.com/topics/social-sciences/wild-animal" target="_blank" class="article">
+                <img src="☛All Things Red☚.jpeg" alt="Nature Article">
+                <h3>Exploring the Wild</h3>
+                <p>Travel back in time and explore the wild wonders of the Earth.</p>
+                <p class="author">Written by Emily Davis</p>
+            </a>
+
+            <!-- Oldest Article 3 -->
+            <a href=   "https://www.investopedia.com/terms/f/finance.asp" target="_blank" class="article">
+                <img src= "bit coin.jpeg" alt="Old Finance">
+                <h3>The Evolution of Finance</h3>
+                <p>Learn how finance has changed through history.</p>
+                <p class="author">Written by Robert Taylor</p>
+            </a>
+
+            <!-- Oldest Article 4 -->
+            <a href= " https://tetw.org/Movies"target="_blank" class="article">
+                <img src= "cinema.jpeg"alt="Old Movies">
+                <h3>Classics of Cinema</h3>
+                <p>Explore some of the most iconic films from the past.</p>
+                <p class="author">Written by Jennifer Brown</p>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>

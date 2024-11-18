@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Children’s Storybooks</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap" rel="stylesheet">
+    <style>
+         body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Nunito', sans-serif;
+            background-color: #f3f8ff;
+        }
+
+        header {
+            background-color: #6fa3ef;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .story-section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .story-section h2 {
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .book-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 10px;
+        }
+
+        .book-card {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .book-card:hover {
+            transform: scale(1.05);
+        }
+
+        .book-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .book-card-content {
+            padding: 15px;
+        }
+
+        .book-card h3 {
+            margin: 0 0 10px;
+            color: #333;
+            font-size: 20px;
+        }
+
+        .book-card p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .book-card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #6fa3ef;
+            color: white;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .book-card a:hover {
+            background-color: #5b89b5;
+        }
+
+        footer {
+            background-color: #6fa3ef;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .related-books {
+            margin: 50px auto;
+            max-width: 900px;
+        }
+
+        .related-books h3 {
+            text-align: center;
+            color: #007bff;
+        }
+
+        .book-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .book-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px;
+            width: 150px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .book-card img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .book-card a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Children’s Storybooks</h1>
+    </header>
+
+    <section class="story-section">
+        <h2>Popular Storybooks for Kids</h2>
+        <div class="book-grid">
+            <div class="book-card">
+                <img src="https://placekitten.com/220/180" alt="The Very Hungry Caterpillar">
+                <h3>The Very Hungry Caterpillar</h3>
+                <p>By Eric Carle</p>
+                <a href="#">Read Now</a>
+            </div>
+
+            <div class="book-card">
+                <img src="https://placekitten.com/221/180" alt="Goodnight Moon">
+                <h3>Goodnight Moon</h3>
+                <p>By Margaret Wise Brown</p>
+                <a href="#">Read Now</a>
+            </div>
+
+            <div class="book-card">
+                <img src="https://placekitten.com/222/180" alt="Where the Wild Things Are">
+                <h3>Where the Wild Things Are</h3>
+                <p>By Maurice Sendak</p>
+                <a href="#">Read Now</a>
+            </div>
+
+            <div class="book-card">
+                <img src="https://placekitten.com/223/180" alt="The Tale of Peter Rabbit">
+                <h3>The Tale of Peter Rabbit</h3>
+                <p>By Beatrix Potter</p>
+                <a href="#">Read Now</a>
+            </div>
+
+            <div class="book-card">
+                <img src="https://placekitten.com/224/180" alt="Charlotte’s Web">
+                <h3>Charlotte’s Web</h3>
+                <p>By E.B. White</p>
+                <a href="#">Read Now</a>
+            </div>
+        </div>
+        <div class="related-books">
+            <h3>Related Books</h3>
+            <div class="book-list">
+                <div class="book-card">
+                    <img src= "C:\Users\gaovi\OneDrive\Documents\home page\react project\78e49223-0aea-4478-be72-9f0651c506c1.jpeg"alt="Related Book 1">
+                    <a href="#">To Kill a Mockingbird</a>
+                </div>
+                <div class="book-card">
+                    <img src= "C:\Users\gaovi\OneDrive\Documents\home page\react project\The Night Circus.jpeg"alt="Related Book 2">
+                    <a href="#">The Night Circus </a>
+                </div>
+                <div class="book-card">
+                    <img src="C:\Users\gaovi\OneDrive\Documents\home page\react project\e83482c1-a842-4c61-abf5-2eb76ff3eafa.jpeg" alt="Related Book 3">
+                    <a href="#">The Girl with the Dragon Tattoo </a>
+                </div>
+                <div class="book-card">
+                    <img src= "C:\Users\gaovi\OneDrive\Documents\home page\react project\Moby Dick by Herman Melville Typography Wall Art.jpeg" alt="Related Book 4">
+                    <a href="#">Moby Dick</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2024 Children’s Storybooks</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports News - The Daily Times</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+body {
+    font-family: 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', serif;
+}
+
+/* Header */
+header.header {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header p {
+    margin: 5px 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background-color: #555;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* Content Section */
+.content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.story {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.story h3 {
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.story p {
+    margin-top: 0;
+}
+
+/* Image Styling */
+.news-img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer.footer {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>🏅 Sports News</h1>
+        <p>Your source for the latest and past sports stories from around the world</p>
+    </header>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="#latest-news">Latest News</a>
+        <a href="#old-news">Old News</a>
+        <a href="#world-olympics">Olympics Around the World</a>
+    </nav>
+
+    <main class="content">
+        <!-- Latest Sports News -->
+        <section id="latest-news" class="section">
+            <h2>Latest Sports News</h2>
+            <article class="story">
+                <img src= "C:\Users\gaovi\OneDrive\Documents\home page\react project\2019–20 UEFA Champions League Group Stage.jpeg" alt="Champions League" class="news-img">
+                <h3>Champions League: A Thrilling Final</h3>
+                <p>The final match ended with a breathtaking performance from both teams, leaving fans on the edge of their seats.</p>
+                <a href="https://www.nbcolympics.com" target="_blank">Read more on NBC Olympics</a>
+            </article>
+
+            <article class="story">
+                <img src= "C:\Users\gaovi\OneDrive\Documents\home page\react project\Why does the Olympics have an ‘AI agenda’ and what does it mean for the future of sport_.jpeg" alt="Olympics Training" class="news-img">
+                <h3>Athletes Train Hard for the Upcoming Olympics</h3>
+                <p>Athletes worldwide are in intense training for the next Olympics, with high hopes of winning gold for their countries.</p>
+                <a href="https://www.sportingnews.com" target="_blank">Explore more on Sporting News</a>
+            </article>
+        </section>
+
+        <!-- Old Sports News -->
+        <section id="old-news" class="section">
+            <h2>Old Sports News</h2>
+            <article class="story">
+                <img src= "C:\Users\gaovi\OneDrive\Documents\home page\react project\25 Fun facts about Tokyo Olympics 2020 Games in 2021.jpeg"alt="2020 Olympics" class="news-img">
+                <h3>Tokyo 2020 Olympics: A Year of Resilience</h3>
+                <p>The 2020 Olympics in Tokyo was postponed due to the pandemic, but when it finally happened, it became a symbol of resilience and unity.</p>
+                <a href="https://olympics.com/en/olympic-games/tokyo-2020" target="_blank">More on Tokyo 2020</a>
+            </article>
+
+            <article class="story">
+                <img src= "C:\Users\gaovi\OneDrive\Documents\home page\react project\Opinion _ I Am 35 and Running Faster Than I Ever Thought Possible (Published 2020).jpeg"alt="Marathon" class="news-img">
+                <h3>Marathon Legends: A Journey Through the Decades</h3>
+                <p>The world has seen some remarkable marathon runners who have inspired millions with their endurance and determination.</p>
+                <a href="https://olympics.com/en/olympic-games/rio-2016" target="_blank">See more on Rio 2016</a> 
+            </article>
+        </section>
+
+        <!-- Olympics Around the World -->
+        <section id="world-olympics" class="section">
+            <h2>Olympics Around the World</h2>
+            <article class="story">
+                <img src= "C:\Users\gaovi\OneDrive\Documents\home page\react project\London-Olympic3-2012.jpeg"alt="London Olympics" class="news-img">
+                <h3>London 2012: A Spectacular Celebration of Sports</h3>
+                <p>The 2012 London Olympics showcased a blend of sports, culture, and entertainment, leaving a lasting legacy.</p>
+            </article>
+
+            <article class="story">
+                <img src= "C:\Users\gaovi\OneDrive\Documents\home page\react project\Rio Olympics 2016_ Games set for opening ceremony.jpeg"alt="Rio Olympics" class="news-img">
+                <h3>Rio 2016: A Colorful and Memorable Event</h3>
+                <p>The Rio Olympics brought vibrant energy, but also faced challenges with infrastructure and organization.</p>
+            </article>
+        </section>
+        <section id="useful-links" class="section">
+            <h2>Useful Links for More Information</h2>
+            <ul>
+                <li><a href="https://olympics.com" target="_blank">Official Olympic Website</a></li>
+                <li><a href="https://www.nbcolympics.com" target="_blank">NBC Olympics Coverage</a></li>
+                <li><a href="https://www.sportingnews.com" target="_blank">Sporting News - Sports Updates</a></li>
+                <li><a href="https://www.espn.com" target="_blank">ESPN - Live Sports News</a></li>
+                <li><a href="https://www.bbc.com/sport" target="_blank">BBC Sport - World Sports Headlines</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 The Daily Times. All rights reserved.</p>
+    </footer>
+</body>
+</html>

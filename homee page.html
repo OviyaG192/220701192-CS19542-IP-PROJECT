@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Library</title>
+    
+    <style>
+        /* Global Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background-color: #007bff;
+            padding: 15px;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin-left: 20px;
+        }
+
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .navbar ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Search Bar */
+        .search-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .search-container input[type="text"] {
+            width: 50%;
+            padding: 15px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-container input[type="submit"] {
+            padding: 15px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .search-container input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        /* Welcome Section */
+        .welcome {
+            text-align: center;
+            margin: 50px;
+        }
+
+        .welcome h1 {
+            font-size: 36px;
+            color: #007bff;
+        }
+
+        .welcome p {
+            font-size: 18px;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Categories Section */
+        .categories {
+            display: flex;
+            justify-content: space-around;
+            margin: 50px auto;
+            width: 80%;
+        }
+
+        .category-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 22%;
+        }
+
+        .category-card h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .category-card a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .category-card a:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer Styles */
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        profile-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .profile-button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .profile-button:hover {
+            background-color: #0056b3;
+        }
+.dropdown {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+        }
+
+        .dropdown a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown a:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Show dropdown on click */
+        .show {
+            display: block;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">Digital Library</div>
+        <div class="profile-container">
+            <button class="profile-button" onclick="toggleDropdown()">Profile</button>
+            <div id="myDropdown" class="dropdown">
+                <a href="view profile.html">View Profile</a>
+                <a href="settings.html">Settings</a>
+                <a href="logout.html">Logout</a>
+            </div>
+        </div>
+        
+
+    </div>
+
+    <!-- Search Box -->
+    <div class="search-container">
+        <input type="text" placeholder="Search for books, articles, and more...">
+        <input type="submit" value="Search">
+    </div>
+
+    <!-- Welcome Section -->
+    <div class="welcome">
+        <h1>Welcome to the Digital Library</h1>
+        <p>Discover a vast collection of e-books, research materials, and resources for children and teens. Explore, learn, and grow with our digital offerings.</p>
+    </div>
+
+    <!-- Categories Section -->
+    <div class="categories">
+        <div class="category-card">
+            <h3>E-books</h3>
+            <a href="page 1.php">Browse E-books</a>
+        </div>
+        <div class="category-card">
+            <h3>Research</h3>
+            <a href="reserach.html">Explore Research</a>
+        </div>
+        <div class="category-card">
+            <h3>Articles and News paper</h3>
+            <a href="articles and newspaper.html">Library Services</a>
+        </div>
+        <div class="category-card">
+            <h3>Children & Teens</h3>
+            <a href="childern and teen.html">For Young Readers</a>
+        </div>
+    </div>
+    
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Digital Library. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </div>
+    <script>
+        function toggleDropdown() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.profile-button')) {
+                var dropdowns = document.getElementsByClassName("dropdown");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>

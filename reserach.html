@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research - Digital Library</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: "Times New Roman", Times, serif;
+            background-color: #f0f0f0;
+        }
+
+        .navbar {
+            background-color: #007bff;
+            padding: 15px;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin-left: 20px;
+        }
+
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .navbar ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            padding: 50px;
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h1 {
+            color: #007bff;
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .research-paper {
+            margin-bottom: 40px;
+        }
+
+        .research-paper h2 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .research-paper h4 {
+            font-size: 20px;
+            color: #666;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .abstract {
+            margin-bottom: 20px;
+        }
+
+        .abstract h3 {
+            font-size: 20px;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .abstract p {
+            font-size: 16px;
+            color: #666;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .authors {
+            font-size: 16px;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        .keywords {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+
+        .content hr {
+            border: none;
+            border-top: 2px solid #f0f0f0;
+            margin: 40px 0;
+        }
+
+        .research-link {
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .research-link:hover {
+            background-color: #0056b3;
+        }
+        .related-section {
+            margin-top: 50px;
+            text-align: center; /* Centering the related section */
+        }
+
+        .related-section h2 {
+            font-size: 28px;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        .related-paper {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 14px;
+            color: #999;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">Digital Library</div>
+        <ul>
+            <li><a href="homee page.html">Home</a></li>
+            
+        </ul>
+    </div>
+
+    <!-- Research Content -->
+    <div class="content">
+        <h1>Research Papers</h1>
+
+        <!-- Research Paper 1 -->
+        <div class="research-paper">
+            <h2>Deep Learning in Medical Imaging</h2>
+            <h4>John Doe, Jane Smith</h4>
+            <div class="abstract">
+                <h3>Abstract</h3>
+                <p>This paper explores the application of deep learning models in medical imaging. With the increasing availability of medical data and advances in computational power, deep learning has shown significant potential in automating medical diagnoses.</p>
+            </div>
+            <div class="authors"><strong>Authors:</strong> John Doe, Jane Smith</div>
+            <div class="keywords"><strong>Keywords:</strong> Deep Learning, Medical Imaging, Artificial Intelligence</div>
+            <!-- Link to the full research paper -->
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6945006/" class="research-link">Read Full Paper</a>
+        </div>
+
+        <hr>
+
+        <!-- Research Paper 2 -->
+        <div class="research-paper">
+            <h2>Blockchain Technology in Financial Services</h2>
+            <h4>Alice Johnson, Robert Brown</h4>
+            <div class="abstract">
+                <h3>Abstract</h3>
+                <p>Blockchain technology has emerged as a transformative tool for financial services. This paper discusses the impact of blockchain on enhancing security, transparency, and efficiency in financial transactions and services.</p>
+            </div>
+            <div class="authors"><strong>Authors:</strong> Alice Johnson, Robert Brown</div>
+            <div class="keywords"><strong>Keywords:</strong> Blockchain, Financial Services, Security</div>
+            <!-- Link to the full research paper -->
+            <a href="https://www.researchgate.net/publication/364649948_A_review_of_Blockchain_Technology_applications_for_financial_services" class="research-link">Read Full Paper</a>
+        </div>
+
+        <hr>
+
+        <!-- Research Paper 3 -->
+        <div class="research-paper">
+            <h2>The Future of Quantum Computing</h2>
+            <h4>Emily White, Michael Green</h4>
+            <div class="abstract">
+                <h3>Abstract</h3>
+                <p>Quantum computing is poised to revolutionize fields from cryptography to machine learning. This paper examines the theoretical foundations of quantum computing and its potential applications in various industries.</p>
+            </div>
+            <div class="authors"><strong>Authors:</strong> Emily White, Michael Green</div>
+            <div class="keywords"><strong>Keywords:</strong> Quantum Computing, Cryptography, Machine Learning</div>
+            <!-- Link to the full research paper -->
+            <a href="https://www.researchgate.net/publication/375794385_The_Future_of_Quantum_Computing_and_its_Potential_Applications" class="research-link">Read Full Paper</a>
+        </div>
+
+        <hr>
+
+        <!-- Research Paper 4 -->
+        <div class="research-paper">
+            <h2>AI-Powered Predictive Analytics in Agriculture</h2>
+            <h4>David Thompson, Sarah Lee</h4>
+            <div class="abstract">
+                <h3>Abstract</h3>
+                <p>This paper presents AI-powered predictive analytics as a tool for improving crop yields and reducing waste in agriculture. By leveraging machine learning algorithms, farmers can make data-driven decisions that optimize agricultural practices.</p>
+            </div>
+            <div class="authors"><strong>Authors:</strong> David Thompson, Sarah Lee</div>
+            <div class="keywords"><strong>Keywords:</strong> Predictive Analytics, Agriculture, Machine Learning</div>
+            <!-- Link to the full research paper -->
+            <a href="https://www.researchgate.net/publication/378287475_AI-DRIVEN_PREDICTIVE_ANALYTICS_IN_AGRICULTURAL_SUPPLY_CHAINS_A_REVIEW_ASSESSING_THE_BENEFITS_AND_CHALLENGES_OF_AI_IN_FORECASTING_DEMAND_AND_OPTIMIZING_SUPPLY_IN_AGRICULTURE" class="research-link">Read Full Paper</a>
+        </div>
+
+    </div>
+    <div class="related-section">
+        <h2>Related Research Papers</h2>
+        <div class="related-paper"><a href="https://www.researchgate.net/publication/367715522_Advances_in_Machine_Learning" class="research-link">Paper 1: Advances in Machine Learning</a></div>
+        <div class="related-paper"><a href="https://www.researchgate.net/publication/379038753_THE_IMPACT_OF_ARTIFICIAL_INTELLIGENCE_ON_SOCIETY "class="research-link">Paper 2: The Impact of AI on Society</a></div>
+        <div class="related-paper"><a href="https://www.researchgate.net/publication/330073687_Big_Data_Analytics_in_Healthcare_Systems"  class="research-link">Paper 3: Big Data Analytics in Healthcare</a></div>
+        <div class="related-paper"><a href="https://www.researchgate.net/publication/372833769_THE_FUTURE_OF_SUSTAINABLE_ENERGY" class="research-link">Paper 4: Sustainable Energy Solutions</a></div>
+    </div>
+
+</div>
+
+
+    <footer>
+        &copy; 2024 Digital Library. All rights reserved.
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Times - Newspaper</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+body {
+    font-family: 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', serif;
+}
+
+/* Header */
+header.header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #444;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background-color: #666;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* Content Section */
+.section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.story {
+    margin-bottom: 20px;
+}
+
+.story h3 a {
+    text-decoration: none;
+    color: #444;
+}
+
+.story h3 a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>The Daily Times</h1>
+        <p>Breaking News | Historical Stories | Special Reports</p>
+    </header>
+
+    <nav class="navbar">
+        <a href="haedline.html">Headlines</a>
+        <a href="worldnews.html">World News</a>
+        <a href="editorial.html">editorial</a>
+        <a href="sports.html">Sports</a>
+    </nav>
+
+    <main class="content">
+        <section id="headlines" class="section">
+            <h2>📰 Top Headlines</h2>
+            <article class="story">
+                <h3><a href="https://bmcmededuc.biomedcentral.com/articles/10.1186/s12909-023-04698-z">AI Revolutionizes Healthcare</a></h3>
+                <p>A quick look at how AI-driven tools are transforming the medical field for faster, better diagnosis.</p>
+            </article>
+        </section>
+
+        <section id="sports" class="section">
+            <h2>🏅 Sports News</h2>
+            <article class="story">
+                <h3><a href="https://olympics.com/en/news/the-history-of-the-olympic-games">Olympics Preparation in Full Swing</a></h3>
+                <p>Athletes around the world are training hard for the upcoming Olympics, aiming for victory.</p>
+            </article>
+        </section>
+        <section id="editorial" class="section">
+            <h2>🖋️ Editorial</h2>
+            <article class="story">
+                <h3>The Future of Education: Virtual Classrooms or In-Person Learning?</h3>
+                <p>The pandemic reshaped how education is delivered. As schools reopen, should virtual classrooms become the new norm?</p>
+            </article>
+        </section>
+        <section id="world-news" class="section">
+            <h2>🌍 World News</h2>
+            <article class="story">
+                <h3>Climate Summit: Nations Agree on New Carbon Targets</h3>
+                <p>Global leaders have reached an agreement on reducing carbon emissions, aiming for net-zero emissions by 2050.</p>
+            </article>
+            <article class="story">
+                <h3>Economic Growth Accelerates in Asia</h3>
+                <p>Emerging economies in Asia are experiencing record-breaking growth, driven by technology and infrastructure investments.</p>
+            </article>
+        </section>
+        <section id="old-facts" class="section old-facts">
+            <h2>📜 Old Facts</h2>
+            <p>A collection of timeless facts from history:</p>
+            <ul>
+                <li>The first Olympic Games were held in 776 BC in ancient Greece.</li>
+                <li>The world's oldest known written language is Sumerian, dating back to 3100 BC.</li>
+                <li>The Leaning Tower of Pisa took nearly 200 years to complete.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 The Daily Times. All rights reserved.</p>
+    </footer>
+</body>
+</html>

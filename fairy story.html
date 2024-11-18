@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fairy Tales and Folktales</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    background-color: #ffcccb;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #ff6347;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.story-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.story {
+    background-color: #ffebcd;
+    padding: 20px;
+    border-radius: 10px;
+    width: 180px;
+    margin: 10px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+}
+
+.story:hover {
+    transform: scale(1.05);
+}
+
+.story img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.story h2 {
+    font-size: 1.5em;
+    color: #ff4500;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #ffcccb;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #ff6347;
+    text-decoration: none;
+    font-weight: bold;
+}
+.related-books {
+            margin: 50px auto;
+            max-width: 900px;
+        }
+
+        .related-books h3 {
+            text-align: center;
+            color: #007bff;
+        }
+
+        .book-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .book-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px;
+            width: 150px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .book-card img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .book-card a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Magical Fairy Tales & Folktales</h1>
+        <p>Explore classic stories from around the world!</p>
+    </header>
+
+    <section class="story-list">
+        <a href="https://www.example.com/story1" target="_blank" class="story">
+            <img src="https://via.placeholder.com/150" alt="Cinderella">
+            <h2>Cinderella</h2>
+            <p>The magical story of a young girl who transforms her life with the help of a fairy godmother.</p>
+        </a>
+
+        <a href="https://www.example.com/story2" target="_blank" class="story">
+            <img src="https://via.placeholder.com/150" alt="Hansel and Gretel">
+            <h2>Hansel and Gretel</h2>
+            <p>A tale of two siblings who find a house made of candy in the woods, but face a clever witch.</p>
+        </a>
+
+        <a href="https://www.example.com/story3" target="_blank" class="story">
+            <img src="https://via.placeholder.com/150" alt="Little Red Riding Hood">
+            <h2>Little Red Riding Hood</h2>
+            <p>Follow Red as she ventures through the woods to visit her grandmother, but beware of the wolf!</p>
+        </a>
+
+        <a href="https://www.example.com/story4" target="_blank" class="story">
+            <img src="https://via.placeholder.com/150" alt="The Three Little Pigs">
+            <h2>The Three Little Pigs</h2>
+            <p>A classic tale of three pigs who build houses to protect themselves from the Big Bad Wolf.</p>
+        </a>
+
+        <a href="https://www.example.com/story5" target="_blank" class="story">
+            <img src="https://via.placeholder.com/150" alt="Jack and the Beanstalk">
+            <h2>Jack and the Beanstalk</h2>
+            <p>Jack's adventure begins when he trades his cow for magic beans that grow into a giant beanstalk.</p>
+        </a>
+
+        <a href="https://www.example.com/story6" target="_blank" class="story">
+            <img src="https://via.placeholder.com/150" alt="The Gingerbread Man">
+            <h2>The Gingerbread Man</h2>
+            <p>Run, run, as fast as you can! Follow the thrilling chase of the Gingerbread Man.</p>
+        </a>
+
+        <a href="https://www.example.com/story7" target="_blank" class="story">
+            <img src="https://via.placeholder.com/150" alt="Beauty and the Beast">
+            <h2>Beauty and the Beast</h2>
+            <p>The story of a young girl who sees the true beauty within a cursed prince.</p>
+        </a>
+        <div class="related-books">
+            <h3>Related Books</h3>
+            <div class="book-list">
+                <div class="book-card">
+                    <img src= "C:\Users\gaovi\OneDrive\Documents\home page\react project\78e49223-0aea-4478-be72-9f0651c506c1.jpeg"alt="Related Book 1">
+                    <a href="#">To Kill a Mockingbird</a>
+                </div>
+                <div class="book-card">
+                    <img src= "C:\Users\gaovi\OneDrive\Documents\home page\react project\The Night Circus.jpeg"alt="Related Book 2">
+                    <a href="#">The Night Circus </a>
+                </div>
+                <div class="book-card">
+                    <img src="C:\Users\gaovi\OneDrive\Documents\home page\react project\e83482c1-a842-4c61-abf5-2eb76ff3eafa.jpeg" alt="Related Book 3">
+                    <a href="#">The Girl with the Dragon Tattoo </a>
+                </div>
+                <div class="book-card">
+                    <img src= "C:\Users\gaovi\OneDrive\Documents\home page\react project\Moby Dick by Herman Melville Typography Wall Art.jpeg" alt="Related Book 4">
+                    <a href="#">Moby Dick</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>Discover more magical stories at <a href="#">FairyTalesWorld.com</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Profile Page</title>
+    <style>
+        .body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.profile-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <!-- View Mode -->
+        <div id="viewMode">
+            <h1>Your Profile</h1>
+            <p><strong>Name:</strong> <span id="displayName">John Doe</span></p>
+            <p><strong>Email:</strong> <span id="displayEmail">john.doe@example.com</span></p>
+            <button id="editButton">Edit Profile</button>
+        </div>
+
+        <!-- Edit Mode (Initially Hidden) -->
+        <div id="editMode" style="display: none;">
+            <h1>Edit Profile</h1>
+            <label for="editName">Name:</label>
+            <input type="text" id="editName" value="John Doe"><br><br>
+            
+            <label for="editEmail">Email:</label>
+            <input type="email" id="editEmail" value="john.doe@example.com"><br><br>
+            
+            <button id="saveButton">Save</button>
+            <button id="cancelButton">Cancel</button>
+        </div>
+    </div>
+
+    <script>
+        // Get elements
+const viewMode = document.getElementById('viewMode');
+const editMode = document.getElementById('editMode');
+const editButton = document.getElementById('editButton');
+const saveButton = document.getElementById('saveButton');
+const cancelButton = document.getElementById('cancelButton');
+
+const displayName = document.getElementById('displayName');
+const displayEmail = document.getElementById('displayEmail');
+const editName = document.getElementById('editName');
+const editEmail = document.getElementById('editEmail');
+
+// Switch to Edit Mode
+editButton.addEventListener('click', () => {
+    viewMode.style.display = 'none';
+    editMode.style.display = 'block';
+});
+
+// Save Changes and Switch to View Mode
+saveButton.addEventListener('click', () => {
+    displayName.textContent = editName.value;
+    displayEmail.textContent = editEmail.value;
+    switchToViewMode();
+});
+
+// Cancel Changes and Switch to View Mode
+cancelButton.addEventListener('click', () => {
+    editName.value = displayName.textContent;
+    editEmail.value = displayEmail.textContent;
+    switchToViewMode();
+});
+
+// Helper Function to Switch to View Mode
+function switchToViewMode() {
+    editMode.style.display = 'none';
+    viewMode.style.display = 'block';
+}
+
+    </script>
+</body>
+</html>
